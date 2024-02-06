@@ -17,7 +17,7 @@ for ($i=0; $i -lt $firstNames.Length; $i++) {
         Surname           = "$($lastNames[$i])"
         DisplayName       = "$($firstNames[$i]) $($lastNames[$i])"
         EmailAddress      = "$($firstNames[$i]).$($lastNames[$i])@{DOMAIN}.com"
-        AccountPassword   = (ConvertTo-SecureString "Morescousa!" -AsPlainText -Force)
+        AccountPassword   = (ConvertTo-SecureString "password" -AsPlainText -Force)
         Enabled           = $true
         Name              = "$($firstNames[$i]) $($lastNames[$i])"  # Add the "Name" parameter
     }
